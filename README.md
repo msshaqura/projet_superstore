@@ -1,64 +1,76 @@
-# Superstore ETL Project
+🎯 Superstore ETL Dashboard
+Hugging Face Spaces Python 3.11+ Streamlit
 
-## Vue d'ensemble du projet
-Ce projet implémente un pipeline ETL pour charger les données Superstore depuis un CSV, les nettoyer, et créer un schéma en étoile (star schema) dans PostgreSQL en utilisant SQLAlchemy et Pandas.
+🚀 Live Demo
+👉 Try the app here:
+https://huggingface.co/spaces/msshaqura/superstore_project
 
-## Prérequis
+📝 Description
+This project implements an ETL pipeline to load Superstore data from a CSV file, clean it, and create a star schema in PostgreSQL using SQLAlchemy and Pandas.
+The app also provides a Streamlit dashboard to visualize key metrics from the Superstore dataset.
+
+🎯 Project Objectives
+- Extract, clean, and load Superstore data into PostgreSQL
+- Create a star schema for analytics
+- Provide an interactive dashboard with Streamlit
+- Visualize sales, profit, and other key metrics
+
+📊 Key Features
+- Cleaned dataset ready for analysis
+- PostgreSQL database integration
+- Streamlit interactive dashboard
+- ETL automation scripts
+
+🛠️ Technologies Used
 - Python 3.11+
-- PostgreSQL 15+
-- Docker & Docker Compose
-- Librairies Python :
-  - pandas
-  - sqlalchemy
-  - psycopg2
-  - python-dotenv
-  - chardet
-  - kagglehub
+- Streamlit – Interactive dashboard
+- Pandas – Data manipulation
+- SQLAlchemy – Database ORM
+- Plotly / Matplotlib / Seaborn – Visualizations
+- PostgreSQL – Data warehouse
+- Docker – Containerized environment
 
-## Instructions d'installation
-
-### 1️⃣ Créer et activer un environnement virtuel
-```bash
-python -m venv venv
-# Linux / Mac
-source venv/bin/activate
-# Windows
-venv\Scripts\activate
-
-
-## Installer les dépendances
-pip install -r requirements.txt
-
-## Démarrer PostgreSQL avec Docker Compose
-docker-compose up -d
-
-## Lancer le script ETL principal
-python src/main.py
-
-
-## Structure du projet
-Bloc_6/
-│
-├─ data/
-│  └─ clean_superstore.csv  # CSV nettoyé prêt pour la DB
-│
-├─ database/
-│  ├─ schema.sql          
-│  ├─ schema.sql.save  
-│
-├─ notebooks/
-│  ├─ check_db.ipynb
-│  ├─ sample_superstore.ipynb  
+📁 Project Structure
+superstore_project/
 │
 ├─ src/
-│  ├─ main.py          # Script principal pour exécuter l'ETL
-│  ├─ db.py            # Configuration de la base de données et création du moteur SQLAlchemy
-│  ├─ data_loader.py   # Téléchargement et nettoyage des données
-│  └─ load_to_db.py    # Chargement des données dans les tables PostgreSQL
+│  ├─ main.py          # Main ETL script
+│  ├─ db.py            # PostgreSQL connection and engine setup
+│  ├─ data_loader.py   # Data cleaning and loading
+│  └─ streamlit_app.py # Streamlit dashboard
 │
-├─ docker-compose.yml
+├─ data/               # Cleaned CSV data
+│  └─ clean_superstore.csv
+│
+├─ Dockerfile
+├─ requirements.txt
 └─ README.md
 
+⚙️ Installation (Local)
+# Clone the repository
+git clone https://huggingface.co/spaces/msshaqura/superstore_project
+cd superstore_project
 
-# Pour démarrer docker : docker compose up
-# Pour démarrer RDS : ENV_FILE=.env docker compose up -d
+# Create virtual environment
+python -m venv venv
+
+# Activate it
+# Windows
+venv\Scripts\activate
+# Mac/Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run src/streamlit_app.py
+
+🌐 Deployment
+The app is deployed using Hugging Face Spaces (Docker + Streamlit)
+
+🔗 https://huggingface.co/spaces/msshaqura/superstore_project
+
+👨‍💻 Author
+GitHub: https://github.com/msshaqura
+Hugging Face: https://huggingface.co/msshaqura
