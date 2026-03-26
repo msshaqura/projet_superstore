@@ -1,5 +1,8 @@
 🎯 Superstore ETL Dashboard
-Hugging Face Spaces • Python 3.11+ • Streamlit
+
+[![Hugging Face Spaces](https://img.shields.io/badge/🤗-Live%20App-yellow)](https://huggingface.co/spaces/msshaqura/netflix_project)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-red)](https://streamlit.io)
 
 🚀 Live Demo
 👉 Try the app here:  
@@ -16,13 +19,13 @@ It also provides an interactive Streamlit dashboard to explore key metrics and v
 - Visualize sales performance, profits, and trends by state/product/customer  
 
 📊 Key Insights
-| Metric                 | Result                     |
-|------------------------|---------------------------|
-| Total Orders           | (to be calculated)         |
-| Total Revenue          | (to be calculated)         |
-| Top Selling Product    | (to be calculated)         |
-| Most Profitable State  | (to be calculated)         |
-| Customers              | (to be calculated)         |
+| Metric                 | Result                                            |
+|------------------------|---------------------------------------------------|
+| Total Orders           | 9,993 orders                                      |
+| Total Revenue          | $286,409                                          |
+| Top Selling Product    | Canon imageCLASS 2200 Advanced Copier = $61,600   |
+| Most Profitable State  | Technology =  $836,154                            |
+| Customers              | 793                                               |
 
 🛠️ Technologies Used
 - Python 3.11+  
